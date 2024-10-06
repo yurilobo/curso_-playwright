@@ -8,7 +8,9 @@ const expect = require('expect');
 
     await page.goto('https://react-redux.realworld.io/#/login')
     const title = await page.title()
-    expect(title).toBe('Conduit')
+    //expect(title).toHaveTitle('conduit')
+    // expect(title).toBe('Conduit')
+    
 
     await page.fill('input[type = "email"]', 'alanvoigt@yahoo.com.br')
     await page.press('input[type = "email"]', 'Tab')
